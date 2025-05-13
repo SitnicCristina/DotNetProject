@@ -4,8 +4,8 @@ namespace DotNetExamples
 {
     internal class Lesson5
     {
-        static void Main(string[] args)
-        {
+        //static void Main(string[] args)
+        //{
 
             #region Gestionarea datelor de naștere
             /*
@@ -25,23 +25,23 @@ namespace DotNetExamples
 
 
             #region Student
-            Console.WriteLine("Enter the student's details: ");
-            Console.Write("Name: ");
-            string name = Console.ReadLine();
-            Console.Write("Age: ");
-            int age = int.Parse(Console.ReadLine());
-            Console.Write("Speciality: ");
-            string speciality = Console.ReadLine();
-            Console.Write("Study Grade (1-6): ");
-            int studyGrade = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter the student's details: ");
+            //Console.Write("Name: ");
+            //string name = Console.ReadLine();
+            //Console.Write("Age: ");
+            //int age = int.Parse(Console.ReadLine());
+            //Console.Write("Speciality: ");
+            //string speciality = Console.ReadLine();
+            //Console.Write("Study Grade (1-6): ");
+            //int studyGrade = int.Parse(Console.ReadLine());
 
-            var student = new Student(name,age,speciality,studyGrade);
-            student.DisplayStudentDetails();
+            //var student = new Student(name,age,speciality,studyGrade);
+            //student.DisplayStudentDetails();
 
-            Console.ReadLine();
+            //Console.ReadLine();
             #endregion
 
 
-        }
+        //}
     }
 }
