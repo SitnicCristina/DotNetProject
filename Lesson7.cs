@@ -8,8 +8,8 @@ namespace DotNetExamples
 {
     internal class Lesson7
     {
-        static void Main(string[] args)
-        {
+        // static void Main(string[] args)
+        // {
 
             #region
             //Console.WriteLine("Introduceti numarul de studenti: ");
@@ -28,29 +28,29 @@ namespace DotNetExamples
             #endregion
 
             #region
-            DateAngajati[] angajati = new DateAngajati[3];
-            double sum = 0;
-
-            for (int i = 0; i < angajati.Length; i++)
-            { 
-                Console.WriteLine($"Introduceti datele la angajatul : {i + 1}: ");
-                Console.Write("Nme: ");
-                angajati[i].name = Console.ReadLine();
-
-                Console.Write("Departament: ");
-                angajati[i].depart = Console.ReadLine();
-
-                Console.Write("Salary: ");
-                angajati[i].salary = double.Parse(Console.ReadLine());
-
-                sum += angajati[i].salary;
-                
-            }
-
-            Console.WriteLine("\nMedia salariului este {0} ", sum / 3);
+            // DateAngajati[] angajati = new DateAngajati[3];
+            // double sum = 0;
+            //
+            // for (int i = 0; i < angajati.Length; i++)
+            // { 
+            //     Console.WriteLine($"Introduceti datele la angajatul : {i + 1}: ");
+            //     Console.Write("Nme: ");
+            //     angajati[i].name = Console.ReadLine();
+            //
+            //     Console.Write("Departament: ");
+            //     angajati[i].depart = Console.ReadLine();
+            //
+            //     Console.Write("Salary: ");
+            //     angajati[i].salary = double.Parse(Console.ReadLine());
+            //
+            //     sum += angajati[i].salary;
+            //     
+            // }
+            //
+            // Console.WriteLine("\nMedia salariului este {0} ", sum / 3);
             #endregion
 
-        }
+        // }
     }
 
     struct DateAngajati
