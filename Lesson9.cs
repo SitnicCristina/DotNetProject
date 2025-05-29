@@ -2,8 +2,8 @@ namespace DotNetExamples;
 
 public class Lesson9
 {
-    private static void Main(string[] args)
-    {
+    // private static void Main(string[] args)
+    // {
         // #region Ex1. Calcularea mediei unui set de note
         //
         // int[] note = new int[4];
@@ -34,40 +34,40 @@ public class Lesson9
         // Console.WriteLine($"Media notelor este: {suma / note.Length}");
         // #endregion
 
-        #region Ex2. Validarea datelor de autentificare
-
-        Utilizator utilizator = new Utilizator();
-        Console.Write("Introduceti nume de utilizator: ");
-        try
-        {
-            utilizator.nume = Console.ReadLine();
-            if (utilizator.nume == null)
-            {
-                throw new NumeUtiliceptiozatorGolException("Nume Utilizator este Gol!");
-            }
-        }
-        catch (NumeUtiliceptiozatorGolException e)
-        {
-            Console.WriteLine(e);
-        }
-
-
-        Console.Write("Introduceti porola: ");
-        try
-        {
-            utilizator.parola = Console.ReadLine();
-            if (utilizator.parola.Length < 6)
-            {
-                throw new ParolaPreaScurtaException("Parola este prea scurta");
-            }
-        }
-        catch (ParolaPreaScurtaException e)
-        {
-            Console.WriteLine(e);
-        }
-
-        #endregion
-    }
+    //     #region Ex2. Validarea datelor de autentificare
+    //
+    //     Utilizator utilizator = new Utilizator();
+    //     Console.Write("Introduceti nume de utilizator: ");
+    //     try
+    //     {
+    //         utilizator.nume = Console.ReadLine();
+    //         if (utilizator.nume == null)
+    //         {
+    //             throw new NumeUtiliceptiozatorGolException("Nume Utilizator este Gol!");
+    //         }
+    //     }
+    //     catch (NumeUtiliceptiozatorGolException e)
+    //     {
+    //         Console.WriteLine(e);
+    //     }
+    //
+    //
+    //     Console.Write("Introduceti porola: ");
+    //     try
+    //     {
+    //         utilizator.parola = Console.ReadLine();
+    //         if (utilizator.parola.Length < 6)
+    //         {
+    //             throw new ParolaPreaScurtaException("Parola este prea scurta");
+    //         }
+    //     }
+    //     catch (ParolaPreaScurtaException e)
+    //     {
+    //         Console.WriteLine(e);
+    //     }
+    //
+    //     #endregion
+    // }
 
     struct Utilizator()
     {
